@@ -3,4 +3,8 @@ I'm just checking to see if this works.
 
 #2 new lines added
 *change from the github website
+<<<<<<< HEAD
 *change from my computer
+=======
+*change from desktop
+*counter change from github
