@@ -1,0 +1,8 @@
+﻿  yahtzee_functions.c
+C:\Users\Ehiso\OneDrive\Desktop\WSU CLASSES\FRESHMAN\SEMESTER 2\CPTS 121\PA'S\Oigiagbe_PA5\yahtzee_functions.c(64,1): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char [2]'
+C:\Users\Ehiso\OneDrive\Desktop\WSU CLASSES\FRESHMAN\SEMESTER 2\CPTS 121\PA'S\Oigiagbe_PA5\yahtzee_functions.c(255,13): warning C4098: 'reroll_choice': 'void' function returning a value
+C:\Users\Ehiso\OneDrive\Desktop\WSU CLASSES\FRESHMAN\SEMESTER 2\CPTS 121\PA'S\Oigiagbe_PA5\yahtzee_functions.c(109): warning C4716: 'yahtzee_control_center': must return a value
+C:\Users\Ehiso\OneDrive\Desktop\WSU CLASSES\FRESHMAN\SEMESTER 2\CPTS 121\PA'S\Oigiagbe_PA5\yahtzee_functions.c(465): warning C4715: 'small_straight': not all control paths return a value
+C:\Users\Ehiso\OneDrive\Desktop\WSU CLASSES\FRESHMAN\SEMESTER 2\CPTS 121\PA'S\Oigiagbe_PA5\yahtzee_functions.c(476): warning C4715: 'large_straight': not all control paths return a value
+C:\Users\Ehiso\OneDrive\Desktop\WSU CLASSES\FRESHMAN\SEMESTER 2\CPTS 121\PA'S\Oigiagbe_PA5\yahtzee_functions.c(223): warning C4715: 'roll_iteration': not all control paths return a value
+  Oigiagbe_PA5.vcxproj -> C:\Users\Ehiso\OneDrive\Desktop\WSU CLASSES\FRESHMAN\SEMESTER 2\CPTS 121\PA'S\Oigiagbe_PA5\x64\Debug\Oigiagbe_PA5.exe

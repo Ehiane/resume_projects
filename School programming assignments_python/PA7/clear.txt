@@ -1,0 +1,4 @@
+This is a pretty lame clear text file.
+It consists of two lines of text followed by a blank line.
+
+And this is the final line.  Did you expect Shakespeare?
