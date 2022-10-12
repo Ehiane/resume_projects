@@ -1,0 +1,465 @@
+@import  url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+p{
+    font-size: 1rem;
+    color: whitesmoke;
+    line-height: 1.9rem;
+    text-align: left;
+}
+
+/* hero section */
+#hero{
+
+    background-image: url(./image/chosen.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity:.6;
+    z-index: -1;
+}
+
+
+#hero .hero{
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 50px;
+justify-content: flex-start;
+
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+
+#hero h1:nth-child(1){
+
+    animation-delay:.8s;
+}
+
+#hero h1:nth-child(2){
+
+    animation-delay:1.6s;
+    
+}
+
+#hero h1:nth-child(3){
+    animation: text_reveal_name 1s ease forwards;
+    animation-delay:2.65s;
+}
+
+
+#hero h1 span{
+
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 0%;
+background-color: rgb(41, 137, 181);
+animation: text_reval_box 1s ease;
+animation-delay: 1s;
+
+}
+
+
+#hero h1:nth-child(1) span{
+    animation-delay: .3s;
+}
+
+#hero h1:nth-child(2) span{
+    animation-delay: 1.2s;
+
+}
+
+#hero h1:nth-child(3) span{
+    
+    animation-delay: 2.3s;
+}
+    
+
+#hero .cta{
+ display: inline-block;
+ padding: 10px 30px;
+ color: white;
+ background-color: transparent;
+ border: 2px solid rgb(41, 137, 181);
+ font-size: 2 rem;
+ text-transform: uppercase;
+ letter-spacing: .1rem;
+ margin-top: 30px;
+ transition: .3s ease;
+ transition-property: background-color, color;
+}
+#hero .cta:hover{
+    color: white;
+    background-color: rgb(41, 137, 181);
+}
+
+/*End of hero section */
+
+
+
+/*Projects Section*/
+
+#projects .projects{
+flex-direction: column;
+text-align: center;
+max-width: 1500px;
+margin: 0 auto;
+padding: 100px 0;
+background-image: url(./image/chosen2.JPG);
+background-position: top center;
+position: absolute;
+z-index: 1;
+}
+
+#projects .projects::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity:.1;
+    z-index: -1;
+}
+
+#projects .projects-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: aquamarine;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#projects .projects-title:hover{
+    font-size: 6rem;
+    color: white;
+    cursor:text;
+}
+
+#projects .projects-title span{
+    color:white;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#projects .projects-title span:hover{
+    color: aquamarine;
+    cursor:text;
+}
+
+
+#projects .projects-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: 0.05rem;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+
+#projects .projects-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#projects .project-Html_Css{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./image/html_css_background.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    color: turquoise;
+    position: relative;
+    z-index: 1;
+    transition-property: all;
+    transition-duration: 1s;
+}
+#projects .project-Html_Css::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    
+}
+
+#projects .project-python{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./image/A_litreal_python.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    color: turquoise;
+    position: relative;
+    z-index: 1;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#projects .project-python::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+
+}
+
+#projects .project-Cprogramming{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./image/jonatan-pie-h8nxGssjQXs-unsplash.jpg);
+    background-size: bottom;
+    position: relative;
+    
+    margin: 10px 5%;
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+}
+#projects .project-Cprogramming::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+
+}
+
+
+/* individual p tags  */
+#projects .project-Html_Css p{
+    font-size: 1rem;
+    color: white;
+    line-height: 1.9rem;
+    text-align: left;
+}
+
+#projects .project-python p{
+    font-size: 1rem;
+    color: white;
+    line-height: 1.9rem;
+    text-align: left;
+}
+
+#projects .project-Cprogramming p{
+    font-size: 1rem;
+    color: white;
+    line-height: 1.9rem;
+    text-align: left;
+}
+
+/* individual hover tags  */
+#projects .project-Html_Css:hover{
+    padding: 2.1rem;
+    background-size: cover;
+    cursor:text;
+
+}
+
+#projects .project-python:hover{
+    padding: 2.1rem;
+    background-size: cover;
+    cursor:text;
+
+}
+
+#projects .project-Cprogramming:hover{
+    padding: 2.1rem;
+    background-size: cover;
+    cursor:text;
+
+}
+
+
+/* individual p transiton tags  */
+#projects .project-Html_Css p{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#projects .project-python p{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#projects .project-Cprogramming p{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+
+/* individual p hover tags  */
+#projects .project-Html_Css:hover p{
+    font-size: 1.5rem;
+    color: turquoise;
+   cursor:text;
+
+}
+
+#projects .project-python:hover p{
+    font-size: 1.5rem;
+    color: turquoise;
+   cursor:text;
+
+}
+
+
+#projects .project-Cprogramming:hover p{
+    font-size: 1.5rem;
+   color: turquoise;
+   cursor:text;
+
+}
+
+
+
+
+#projects .project-Cprogramming h2{
+    font-size: 1.5rem;
+    color: turquoise;
+    line-height: 1.9rem;
+    text-align: left;
+}
+
+#projects .projects-top p:hover{
+
+    font-size: 1.45rem;
+    color: turquoise;
+    text-align: left;
+
+}
+
+
+
+/*End of Projects Section */
+
+
+
+
+/* keyFrames */
+@keyframes text_reval_box{
+
+    50%{
+        background-color: aquamarine;
+        width:100%;
+        left: 0;
+    } 
+    100%{
+
+        background-color: aqua;
+        width: 0;
+        left: 100%;
+    }
+
+}
+
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+
+}
+
+@keyframes text_reveal_name{
+    100%{
+        color: rgb(41, 137, 181);
+        font-weight: 500px;
+    }
+
+}
+
+
+
+/* keyFrames */
